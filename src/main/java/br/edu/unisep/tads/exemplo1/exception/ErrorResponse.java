@@ -2,6 +2,10 @@ package br.edu.unisep.tads.exemplo1.exception;
 
 import java.util.Date;
 
+import lombok.Getter;
+import lombok.Setter;
+@Getter
+@Setter
 public class ErrorResponse {
     
     private Date timestamp;
@@ -15,38 +19,4 @@ public class ErrorResponse {
         this.mensagem = mensagem;
         this.detalhes = detalhes;
     }
-
-    public Date getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getMensagem() {
-        return mensagem;
-    }
-
-    public void setMensagem(String mensagem) {
-        this.mensagem = mensagem;
-    }
-
-    public String getDetalhes() {
-        return detalhes;
-    }
-
-    public void setDetalhes(String detalhes) {
-        this.detalhes = detalhes;
-    }
-
-    
 }
